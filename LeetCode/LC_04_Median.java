@@ -1,4 +1,4 @@
-public class LC_4_Median {
+public class LC_04_Median {
     public static void main(String[] args) {
        int[] nums1 = {1,2};
        int[] nums2 = {3,4}; 

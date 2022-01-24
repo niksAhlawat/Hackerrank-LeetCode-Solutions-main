@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class LC_3_LongestSubString {
+public class LC_03_LongestSubString {
     public static void main(String[] args) {
         String s = "abcabcdbbyuwjhmnlk";
         System.out.println(lengthOfLongestSubstring(s));

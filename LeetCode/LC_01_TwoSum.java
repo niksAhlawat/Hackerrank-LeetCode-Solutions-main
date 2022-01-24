@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LC_1_TwoSum {
+public class LC_01_TwoSum {
     public static void main(String[] args) {
         int[] nums = {3, 2, 4};
         int target = 6;

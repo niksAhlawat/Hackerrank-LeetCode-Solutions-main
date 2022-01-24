@@ -4,7 +4,7 @@
  * Output: [7,0,8]
  * Explanation: 342 + 465 = 807.
  */
-public class LC_2_AddTwoNumbers {
+public class LC_02_AddTwoNumbers {
     
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(-1);
