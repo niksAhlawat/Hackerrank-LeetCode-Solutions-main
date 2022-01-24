@@ -33,3 +33,4 @@ if __name__ == '__main__':
     steps = int(input().strip())
     path = input()
     result = countingValleys(steps, path)
+    print(result)
