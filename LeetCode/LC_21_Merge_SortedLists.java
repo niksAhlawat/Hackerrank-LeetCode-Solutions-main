@@ -1,6 +1,29 @@
 public class LC_21_Merge_SortedLists {
 
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    public static void main(String[] args) {
+        ListNode head1 = new ListNode(1);
+        head1.next = new ListNode(2);
+        head1.next.next = new ListNode(4);
+        ListNode head2 = new ListNode(1);
+        head2.next = new ListNode(3);
+        head2.next.next = new ListNode(4);
+        printList(mergeTwoLists(head1, head2));
+
+        printList(mergeTwoLists(null, null));
+
+        head2 = new ListNode(0);
+        printList(mergeTwoLists(null, head2));
+    }
+
+    private static void printList(ListNode mergedList) {
+        while (mergedList != null) {
+            System.out.print(mergedList.val + " ");
+            mergedList = mergedList.next;
+        }
+        System.out.println();
+    }
+
+    private static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         // Check if ant of the lists are null
         if (l1 == null) {
             return l2;

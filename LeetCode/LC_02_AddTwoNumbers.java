@@ -5,6 +5,25 @@
  * Explanation: 342 + 465 = 807.
  */
 public class LC_02_AddTwoNumbers {
+
+    public static void main(String[] args) {
+        ListNode head1 = new ListNode(2);
+        head1.next = new ListNode(4);
+        head1.next.next = new ListNode(3);
+
+        ListNode head2 = new ListNode(5);
+        head2.next = new ListNode(6);
+        head2.next.next = new ListNode(4);
+        printList(addTwoNumbers(head1, head2));
+    }
+
+    private static void printList(ListNode mergedList) {
+        while (mergedList != null) {
+            System.out.print(mergedList.val + " ");
+            mergedList = mergedList.next;
+        }
+        System.out.println();
+    }
     
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(-1);
